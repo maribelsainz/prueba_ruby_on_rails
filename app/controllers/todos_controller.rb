@@ -1,6 +1,10 @@
 class TodosController < ApplicationController
 def index
-  @todo = Todo.order(:id)
+  @todo = Todo.all
+end
+
+def new
+  @todo = Todo.new
 end
 
 end
