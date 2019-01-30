@@ -1,7 +1,10 @@
+<br>
+<br>
+<br>
 <%=notice%>
-
+<br>
 <h1>Index!</h1>
-
+<br>
 <ul class="list-group">
 
  <% @todo.each do |contenido| %>
@@ -12,6 +15,8 @@
   <li class="list-group-item"><%= link_to 'Edit', edit_todo_path(contenido) %></li>
   <li class="list-group-item"><%= link_to 'Destroy', todo_path(contenido), method: :delete%></li>
   <li class="list-group-item"><%=link_to 'Complete', complete_todo_path(contenido)%></li>
+  <br>
+  <br>
 </ul>
 <% end %>
 

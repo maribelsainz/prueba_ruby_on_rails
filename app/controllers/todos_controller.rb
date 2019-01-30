@@ -40,9 +40,9 @@ def complete
     redirect_to root_path
 end
 
-# def list
-#   @todo = Todo.all
-# end
+def list
+  @todo = Todo.all
+end
 
 
 private
